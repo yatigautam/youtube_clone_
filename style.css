@@ -19,6 +19,7 @@ nav {
   align-items: center;
   padding: 10px;
 }
+
 .logo img {
   width: 150px;
   height: auto;
@@ -27,17 +28,25 @@ nav {
 .center-nav {
   display: flex;
 }
+
 .search {
   display: flex;
 }
+
 .search input {
   min-width: 600px;
   padding: 10px 20px;
   border: 0.5px solid #ccc;
 }
+
 .search button {
   border: none;
   padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #f0f0f0;
 }
 
 .mic {
@@ -48,6 +57,7 @@ nav {
   place-items: center;
   margin-left: 15px;
 }
+
 .mic img {
   width: 30px;
 }
@@ -66,15 +76,24 @@ nav {
   gap: 15px;
   border-top: 1px solid #ccc;
 }
+
 .tag {
   padding: 5px 15px;
   border-radius: 20px;
   border: 1px solid rgb(22, 22, 22);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.tag:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
 .dark {
   background: #000;
   color: white;
 }
+
 .light {
   background: rgb(238, 238, 238);
   color: rgb(67, 67, 67);
@@ -98,20 +117,29 @@ aside {
   align-items: center;
   justify-content: center;
 }
+
 .side-icons img {
   width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.side-icons img:hover {
+  transform: scale(1.1);
 }
 
 .side-icons p {
   font-size: 10px;
   margin-top: -5px;
 }
+
 .bars {
   margin-top: 20px;
 }
+
 .main-container {
   width: 100%;
 }
+
 main {
   min-height: 100vh;
   background: rgb(240, 238, 238);
@@ -121,17 +149,20 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
 .card {
   padding: 10px;
   max-width: 320px;
   display: flex;
   flex-direction: column;
 }
+
 .avatar-content {
   padding-top: 10px;
   display: flex;
   gap: 5px;
 }
+
 .card h3 {
   font-size: 20px;
 }
@@ -141,10 +172,12 @@ main {
   flex-direction: column;
   gap: 5px;
 }
+
 .channel-name {
   font-size: 16px;
   font-weight: bold;
 }
+
 .content-status {
   display: flex;
   font-size: 14px;
